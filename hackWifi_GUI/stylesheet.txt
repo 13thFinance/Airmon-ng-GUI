@@ -1,0 +1,33 @@
+#comments for stylesheet have leading #
+#themes are declared with leading "@theme:" followed by a space and then the name identifier
+#they are closed with an "@end_theme" tag
+#the whole theme area is converted into a single string to be interpreted by the
+#setStyleSheet function
+#remember to setup the ui widgets first so that this is applied correctly
+#ex: setup ui, read this doc, spawn widget and tabs to enherit this theme
+
+@theme: redline
+
+color: rgb(255, 20, 20);
+background-color: rgb(50,20,20);
+
+QPushButton
+{
+    color: red;
+    background-color: grey;
+}
+
+QTextEdit
+{
+    color: lime;
+    background-color: black;
+}
+
+QPlainTextEdit
+{
+    color: lime;
+    background-color: black;
+}
+
+@end_theme
+
